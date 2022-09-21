@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="10"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="First Activity"
+            android:textColor="#15629F"
+            android:textSize="40dp"
+
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#CFA1A1">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_weight="10"
+           android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="10">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Họ tên"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="80dp"/>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Mã Sinh Viên" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:ems="10"
+                            android:layout_marginTop="70dp"
+                            android:inputType="textPersonName"
+                            android:text="Nhập tên sinh viên" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Nhập mã sinh viên" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="2">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_weight="10">
+                   <Button
+                       android:id="@+id/mainId1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                        android:layout_weight="5"
+                       android:background="@drawable/btn_boder"
+                       android:gravity="center"
+                       android:padding="2dp"
+                       android:text="Nhập"
+                       android:textColor="#E8E9EA"
+                       android:textSize="20dp"
+
+                       ></Button>
+                   <Button
+                       android:id="@+id/mainId3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_weight="5"
+                       android:background="@drawable/btn_boder2"
+                       android:gravity="center"
+                       android:padding="2dp"
+                       android:text="Hủy"
+                       android:textColor="#E8E9EA"
+                       android:textSize="20dp"
+
+                       ></Button>
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#E69B83"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#B396A0"
+                android:gravity="center"
+                android:text="VÕ LÊ NHẬT HUY"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#B396A0"
+                android:gravity="center"
+                android:text="MSV:2050531200156"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
